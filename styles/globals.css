@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Global styles for the Wav DCA Tracker application.
+ * We keep the base background neutral and provide easy overrides for
+ * dark/light colour schemes via CSS variables if desired in the future.
+ */
+body {
+  @apply bg-gray-100 text-gray-900 font-sans;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  @apply py-2 px-3 text-sm text-gray-700;
+}
+th {
+  @apply bg-gray-50 font-semibold text-left;
+}
+tr:nth-child(even) td {
+  @apply bg-gray-50;
+}
